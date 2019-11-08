@@ -7,7 +7,25 @@
 #para porcentagem
 #====================================================================|
 
+#=========================FUNC
+_LOGO()
+{
+    clear
+    cat <<'EOF'
+         _
+       .' '.
+  __  /     \   _
+ /.-;|  /'._|_.'#`\
+||   |  |  _       |            Baby Percent
+\\__/|  \.' ;'-.__/    Converte semanas em Porcentagem.
+ '--' \     /
+       '._.'
+
+EOF
+}
+
 # INICIO
+_LOGO
 while true; do
     read -p "Quantas Semanas de gestação? " semanas
     if [[ ! "$semanas" =~ ^[0-9]+$ ]]; then
